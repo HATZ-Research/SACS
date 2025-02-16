@@ -32,7 +32,7 @@ Below is the AES key generation method for Layer 2:<br>
 |--------------------------------------------------|------------------|---------------------------------------------------------------|
 | Signature                                        | 2 Bytes          | A unique identifier for the file format                       |
 | Version                                          | 2 Bytes          | Indicates the version of the file                             |
-| Data Length                                      | 2 Bytes          | Total length of the file data                                 |
+| Data Length                                      | 4 Bytes          | Total length of the file data                                 |
 | CRC32                                            | 4 Bytes          | CRC32 checksum for header integrity verification              |
 | IPv4 Mode                                        | 2 Bytes          | Flag indicating whether an IPv4 address is included           |
 | MAC Mode                                         | 2 Bytes          | Flag indicating whether a MAC address is included             |
