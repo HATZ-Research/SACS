@@ -37,7 +37,7 @@ Below is the AES key generation method for Layer 2:<br>
 | IPv4 Mode                                        | 2 Bytes          | Flag indicating whether an IPv4 address is included           |
 | MAC Mode                                         | 2 Bytes          | Flag indicating whether a MAC address is included             |
 | Created Time (Unix Timestamp)                    | 8 Bytes          | Timestamp of when the file was created (Unix format)          |
-| Accessed Time (Unix Timestamp)                   | 4 Bytes          | Timestamp of when the file was last accessed (Unix format)    |
+| Accessed Time (Unix Timestamp)                   | 8 Bytes          | Timestamp of when the file was last accessed (Unix format)    |
 | Header MD5                                       | 16 Bytes         | MD5 hash for verifying header integrity                       |
 | IPv4 Address & Physical MAC Address HMAC SHA256  | 32 Bytes         | HMAC-SHA256 hash of the IPv4 address and physical MAC address |
 | AES IV                                           | 16 Bytes         | Initialization Vector (IV) used for AES encryption            |
