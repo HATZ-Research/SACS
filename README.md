@@ -5,6 +5,9 @@
 > The implementation and use of SACS are entirely at the user's own risk, and we strongly recommend conducting proper security measures and validation.
 > We shall not be held liable for any legal, financial, or technical consequences resulting from the application of this project.
 
+## SACSv1
+On Dev
+
 ## SACS-B
 SACS-B is a file structure developed for basic testing purposes of SACS.<br>
 It contains numerous vulnerabilities and is not intended for commercial use or real-world applications. It is merely a reference material designed to aid understanding.<br>
@@ -19,5 +22,6 @@ It contains numerous vulnerabilities and is not intended for commercial use or r
 
 <img src="SACS_B.png">
 
-## SACSv1
-On Dev
+### Vulnerabilities
+SACS-B has a vulnerability where accessible IP addresses and MAC addresses are managed in plaintext, and HMAC MD5 is stored in an unprotected location, making it very easy for an attacker to manipulate and access the data.<br>
+Using HxD or other hex editors, it is possible to easily disable device access control solutions, leaving only the final AES-256 security layer. This could allow unauthorized external access and is a very dangerous vulnerability.
